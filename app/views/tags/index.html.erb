@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tags</title>
+</head>
+<body>
+<h1>All Tags</h1>
+<ul id="tags">
+	<% @tags.each do |tag| %>
+		<li>
+			<%= link_to tag.name, tag_path(tag)%> 
+
+		</li>
+	<% end %>
+</ul>
+</body>
+</html>
